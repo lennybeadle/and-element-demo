@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Button, TextField } from '@material-ui/core';
-import Autocomplete from '@material-ui/lab/Autocomplete';
+import { Button, TextField } from '@mui/material';
+import Autocomplete from '@mui/material/Autocomplete';
 import { connect } from 'react-redux';
 import { updateLocation } from '../redux/actions/locationActions';
 import { getLocationData, getLocationOptions } from '../services/LocationService';

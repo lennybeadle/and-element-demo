@@ -4,8 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchWeather } from '../redux/actions/weatherActions';
 import { Helmet } from 'react-helmet';
 import { getWeatherIcon } from '../utils/weatherIcon';
-import { Grid, Typography, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
-import { Close } from '@material-ui/icons';
+import { Grid, Typography, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import { Close } from '@mui/icons-material';
 import { StyledTypography, StyledButton, StyledList } from '../MainStyles';
 
 function ViewLocation({ location, onClose }) {

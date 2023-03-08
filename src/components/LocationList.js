@@ -7,14 +7,14 @@ import {
   ListItemSecondaryAction,
   IconButton,
   Button,
-} from '@material-ui/core';
+} from '@mui/material';
 import {
   FavoriteBorder,
   Favorite,
   Edit,
   Delete,
   Visibility,
-} from '@material-ui/icons';
+} from '@mui/icons-material';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   deleteLocation,

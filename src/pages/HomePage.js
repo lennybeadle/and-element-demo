@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import LocationList from '../components/LocationList';
 import { connect } from 'react-redux';
-import { TextField } from '@material-ui/core';
-import Autocomplete from '@material-ui/lab/Autocomplete';
+import { TextField } from '@mui/material';
+import Autocomplete from '@mui/material/Autocomplete';
 import { StyledContainer, StyledTypography, StyledButton } from '../MainStyles';
 import { addLocation, toggleTemperatureUnit } from '../redux/actions/locationActions';
 import { getLocationData, getLocationOptions } from '../services/LocationService';
+
 
 export const HomePage = ({ locations, addLocation, toggleTemperatureUnit }) => {
   const [locationName, setLocationName] = useState('');
